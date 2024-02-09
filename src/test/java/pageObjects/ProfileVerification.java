@@ -24,9 +24,9 @@ public class ProfileVerification extends BasePage {
 	
 	SoftAssert sa=new SoftAssert();
 	public void clickOnProfile() {
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].click();", profile);
-		profile.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", profile);
+	//	profile.click();
 	}
 	
 	public void captureProfileName() {
